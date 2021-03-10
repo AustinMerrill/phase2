@@ -10,12 +10,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "../components/footer"
+import Header2 from "../components/header2"
 
 const Layout = ({ children }) => {
  
   return (
-    <div className="flex flex-col justify-between h-screen items-center p-5  container mx-auto ">
-      <Header />
+    <div className="container flex flex-col items-center justify-between h-screen p-5 mx-auto ">
+      {/* <Header /> */}
+      <Header2 />
       <main>{children}</main>
       <Footer />
     </div>
